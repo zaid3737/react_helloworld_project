@@ -11,8 +11,11 @@ module.exports = {
     static: {
       directory: path.join(__dirname, '/'),
     },
+    host: '0.0.0.0',           // ✅ Add this line
     port: 7777,
-    hot: true
+    hot: true,
+    open: false,               // ✅ Optional: prevents auto-opening browser
+    allowedHosts: 'all'        // ✅ Add this to allow external access
   },
   module: {
     rules: [
